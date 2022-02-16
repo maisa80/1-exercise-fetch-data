@@ -6,10 +6,10 @@
  */
 let btn = document.getElementById('btn');
 btn.addEventListener('click', function () {
-    bring('http://codexplained.se/lorem_text.php');
+    fetchData('http://codexplained.se/lorem_text.php');
 })
 
-function bring(text) {
+function fetchData(text) {
     fetch(text)
         .then(response => {
 
